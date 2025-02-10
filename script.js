@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <h1>¡Sabía que aceptarías!</h1>
             <img src="/images/Heart Love Sticker by Capoo.gif" alt="Imagen romántica" class="gif-final">
             <h2>Si no, te secuestraba</h2>
-            <h3>Te quiero mi cachetona, nos vemos el viernes</h3>
+            <h3>Te quiero mi Cheri, nos vemos el viernes</h3>
             <button id="verSorpresa">Ver sorpresa</button>
         `;
     
