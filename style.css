@@ -1,0 +1,238 @@
+body {
+    background-image: url('/images/fondo_W.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    backdrop-filter: blur(2px);
+    color: white;
+}
+
+#contenedor {
+    background: rgba(255, 255, 255, 0.748);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.76);
+    color: black;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    filter: brightness(80%);
+    transition: 0.5s ease;
+}
+
+#siBtn {
+    background-color: #10c300;
+    color: white;
+}
+
+#noBtn {
+    background-color: #ff2121;
+    color: black;
+}
+
+#noBtn.moviendo {
+    position: absolute;
+}
+
+.imagen-romantica {
+    width: 200px;
+    margin-top: 10px;
+}
+
+.gif-inicial {
+    width: 150px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.gif-no {
+    width: 180px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+.mensaje-repetir {
+    position: absolute;
+    top: 10px;
+    left: 42px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#verSorpresa {
+    background-color: #f4c2c2; 
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+#verSorpresa:hover {
+    filter: brightness(90%);
+    transition: 0.3s ease;
+}
+
+#modalVideo {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    position: relative;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.hidden {
+    display: none !important;
+}
+
+video {
+    max-width: 50%;
+    max-height: 120vh;
+    border-radius: 10px;
+}
+
+#verOtraSorpresa {
+    display: none;
+    margin: 20px auto 0 auto;
+    padding: 15px 20px;
+    font-size: 16px;
+    background-color: #ffb6c1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#verOtraSorpresa:hover {
+    filter: brightness(85%);
+}
+
+#verOtraSorpresa.show {
+    display: block !important;
+}
+
+.mensaje-hermosa {
+    background-color: rgba(0, 0, 0, 0.69);
+    text-align: center;
+    font-size: 1.5em;
+    color: #f5f5f5;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin: 10px;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+.mensaje-again {
+    background-color: rgba(148, 0, 0, 0.6);
+    text-align: center;
+    font-size: 1.2em;
+    color: #fd8154;
+    padding: 10px 15px;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 5px;
+}
+
+.imagen-sorpresa {
+    max-width: 90%;
+    max-height: 80vh;
+    border-radius: 10px;
+}
+
+#modalImagen {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+#audioSorpresa {
+    display: none;
+}
+
+/*.codigo-spotify{
+    display: flex;
+    position: absolute;
+    width: 200px;
+    height: auto;
+    bottom: 100px;
+    border-radius: 10px;
+    transform: translateX(110%);
+    z-index: auto;
+}
+
+<img src="/images/codigo_spot.jpg" alt="Código" class="codigo-spotify"> */
+
+.gif-lateral {
+    width: 320px;
+    height: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 100;
+    transition: opacity 5s ease-in-out;
+}
+
+.gif-izquierda {
+    position: absolute;
+    left: -350px;
+}
+
+.gif-derecha {
+    position: absolute;
+    right: -350px;
+}
+
+.mensaje-final {
+background-color: rgba(141, 139, 139, 0.579);
+text-align: center;
+font-size: 1.2em;
+color: wheat;
+padding: 10px 15px;
+border-radius: 10px;
+margin: 5px;
+}
